@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Euler 28</title>
+  <script type="text/javascript">
+function begin(){
+  spiral = 1001*1001;
+  sum = 0;
+  check = 0;
+  space = 2;
+  for(var i=1;i<=spiral;i++){
+    sum += i;
+    i+=space-1;
+    check++
+    if(check==4){
+      space+=2;
+      check = 0;
+    }
+  }
+  alert(sum);
+}
+  </script>
+  </head>
+  <body onload="begin()">
+
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>          
+  <head>                 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">                 
+    <title>Euler 9</title>                 
+    <style type="text/css">                 
+    </style>     
+<script type="text/javascript">
+/*
+a+b+c = 1000
+a<b<c
+a^2+b^2=c^2
+all are natural numbers
+a^2+b^2 must be squararootable evenly
+*/
+function begin(){
+  a = 0;
+  b = 0;
+  c = 0;
+  for(var i=1;i<250;i++){
+    for(var j=1;j<500;j++){
+      a=i;
+      b=j;
+      if(a<b){                       
+        c=1000-a-b;
+        if((Math.pow(a,2)+Math.pow(b,2))==Math.pow(c,2)){
+          alert(a*b*c);
+          console.log(a+","+b+","+c);
+        }  
+      }
+    }
+  }
+}
+</script>
+  </head>
+  <body onload="begin()">
+
+  </body>
+</html>

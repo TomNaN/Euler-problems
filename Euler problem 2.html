@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Euler 2</title>
+  <script type="text/javascript">
+function begin(){
+  x = 1;
+  y = 2;
+  z = 3;
+  j = 0;
+  answer = 0;
+  array = [];
+  for(var i=0;i<100;i++){
+    z = y+x;
+    if(z > 4000000){
+      break;
+    }
+    if(z%2 == 0){
+      array[j] = z;
+      j++;
+    }
+    x = z+y;
+    if(x > 4000000){
+      break;
+    }
+    if(x%2 == 0){
+      array[j] = x;
+      j++;
+    }
+    y = x+z;
+    if(y > 4000000){
+      break;
+    }
+    if(y%2 == 0){
+      array[j] = y;
+      j++;
+    }
+  }
+  for(var i in array){
+    answer += array[i];
+  }
+  alert(answer);
+}
+  </script>
+  </head>
+  <body onload="begin()">
+
+  </body>
+</html>

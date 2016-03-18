@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Euler 5</title>
+  <script type="text/javascript">
+function begin(){
+  number = 210;
+  // must end in 0  the sum of the numbers must be divisible by 3
+  // 210
+  for(j = 0; j<100000000; j++){
+    if(number%2 == 0 && number%3 == 0 && number%4 == 0 && number%5 == 0 && number%6 == 0 && number%7 == 0 && number%8 == 0 && number%9 == 0 && number%10 == 0){
+      if(number%11 == 0 && number%12 == 0 && number%13 == 0 && number%14 == 0 && number%15 == 0 && number%16 == 0 && number%17 == 0 && number%18 == 0 && number%19 == 0 && number%20 == 0){
+        alert(number)
+      }
+    }
+    number += 210;
+  }
+}
+  </script>
+  </head>
+  <body onload="begin()">
+
+  </body>
+</html>
